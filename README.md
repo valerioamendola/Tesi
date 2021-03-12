@@ -21,4 +21,4 @@ Inters <- intersect(EU_parks_II, Ecoreg)
 ###
 Inters$area <- area(Inters) / 1000000
 ###
-plot(Ecoreg, axes=T); plot(EU_parks_Ia, add=T); plot(Inters, add=T, col='red')
+plot(Ecoreg, axes=T); plot(EU_parks_II, add=T); plot(Inters, add=T, col='red')
