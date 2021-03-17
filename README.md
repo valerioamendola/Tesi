@@ -22,3 +22,7 @@ Inters <- intersect(EU_parks_II, Ecoreg)
 Inters$area <- area(Inters) / 1000000
 ###
 plot(Ecoreg, axes=T); plot(EU_parks_II, add=T); plot(Inters, add=T, col='red')
+###
+object(Inter)
+###
+aggregate(area~EU_parks_II + Ecoreg, data=as.matrix(Inters), FUN=sum)
